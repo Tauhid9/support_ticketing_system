@@ -23,6 +23,8 @@ uvicorn app.main:app --reload
 
 The default local database is SQLite. Set `DATABASE_URL` from `.env.example` for PostgreSQL.
 
+For a fresh database, run `alembic upgrade head` before `python seed.py`.
+
 ### Frontend
 
 ```bash
@@ -36,10 +38,12 @@ Open `http://localhost:5173`.
 ## Included
 
 - Ticket creation and readable ticket numbers
+- Agent and customer demo views
 - Ticket list filters and search
 - Status, priority and assignee controls
 - Customer-visible replies and internal notes
-- WebSocket reply updates
+- Bidirectional WebSocket reply updates
+- Customer response privacy: internal notes are agent-only
 - Status, priority and assignment audit events
 - Seed/demo data
 - Automated tests in `backend/tests`

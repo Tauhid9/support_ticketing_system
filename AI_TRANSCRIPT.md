@@ -21,3 +21,13 @@ Read `Support_Ticketing_Interview_Assignment-1.docx` and `assesment.txt`, then c
 - Authentication and bonus features were omitted because they are outside the required scope.
 - The UI uses only ticketing actions and the required states.
 
+## Requirement completion pass
+
+- Added agent and customer demo views.
+- Added customer-only public messages and blocked customer internal notes.
+- Added viewer-aware ticket detail responses and WebSocket rooms.
+- Added WebSocket message persistence and public/internal broadcast rules.
+- Added assignment validation, readable assignment audit values, status timestamps, and Alembic migrations.
+- Added responsive layouts, accessible labels, notifications, loading/empty states, and frontend environment configuration.
+- Added automated privacy, customer reply, and WebSocket tests.
+
